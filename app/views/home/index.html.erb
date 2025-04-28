@@ -1,0 +1,110 @@
+Rich
+<div >
+        <%= render partial: 'components/diadora/navbar',
+                    locals: { 
+                        navbarsopra: 'CODICE: EXTRA | -20% sull outlet. -30% sopra i 60€',
+                        navbarlogo: '/images/diadoralogo.svg',
+                        navbarlink1: 'Uomo',
+                        navbarlink2: 'Donna',
+                        navbarlink3: 'Bambini',
+                        navbarlink4: 'Sport',
+                        navbarlink5: 'Heritage',
+                        navbarlink6: 'Culture',
+                        navbarlink7: 'Mid-Season Sales',
+                        navbarsearch: 'Search...',
+                        navbarsearchicon: '/images/hearticon.png',
+                        navbarusericon: '/images/shopping.png',
+                        navbarcarticon: '/images/lines.png'           
+                    } 
+        %>
+        
+        <%= render partial: 'components/diadora/hero',
+                    locals: { 
+                        heroimage: '/images/hero.jpg',
+                        herotext: 'Running',
+                        herotitle: 'Atomo Star - Principles of Italian Innovation',
+                        herobuttontext: 'Scopri Atomo Star'
+                    }
+         %>
+
+         <%= render partial: 'components/diadora/collezioni',
+         locals: {
+             titlecollezioni: 'Le nostre collezioni',
+             button1: 'Uomo',
+             button2: 'Donna',
+             button3: 'Sport',
+             button4: 'Heritage',
+             button5: 'Sportswear'
+         }
+         %>
+
+            <%= render partial: 'components/diadora/titolo',
+                    locals: { 
+                        titolo: 'Novità Sport',
+                        sottotitolo: 'Novità Lifestyle'
+                    }
+            %>
+
+            <%= render partial: 'components/diadora/card',
+            locals: {
+                cardimage: '/images/card.webp',
+                cardflag: '/images/italy.png',
+                cardheart: '/images/heart.png',
+                cardtitle: 'ATOMO STAR',
+                cardprice: '€ 190,00',
+                carddescription: 'Scarpa da running Made in Italy - Leggerezza e…',
+                cardcolor: '3 Colori',
+                cardnovita: 'Novità'
+            }
+            %>
+
+            <%= render partial: 'components/diadora/miniature',
+             locals: {
+                titleminiature: 'Lifestyle Classics', 
+                miniatureimage1: '/images/trainer.webp',
+                miniatureimage2: '/images/b560.webp',
+                miniatureimage3: '/images/belite.webp',
+                miniatureimage4: '/images/game.webp',
+                miniatureimage5: '/images/tokyo.webp',
+                miniatureimage6: '/images/mythos.webp',
+                miniatureimage7: '/images/cross.webp',
+                miniatureimage8: '/images/equipe.webp',
+                miniatureimage9: '/images/camaro.webp',
+                miniaturetext1: 'Trainer',
+                miniaturetext2: 'B.560',
+                miniaturetext3: 'B Elite',
+                miniaturetext4: 'Game',
+                miniaturetext5: 'Tokyo',
+                miniaturetext6: 'Mythos',
+                miniaturetext7: 'Cross',
+                miniaturetext8: 'Equipe',
+                miniaturetext9: 'Camaro'
+             }
+             %>
+
+             <%= render partial: '/components/diadora/evidenza', 
+             locals: {
+                evidenzatitle: 'Run core archivio 2009',
+                evidenzabutton: 'Scopri Mythos Star',
+                evidenzabuttonlink: '#',
+                evidenzaimage: '/images/evidenza.webp'
+             }%>
+
+             <%= render partial: 'components/diadora/servizi',
+             locals: {
+                titleservizi: 'I nostri servizi',
+                logoservizi: '/images/shipping.png',
+                logoservizitext: 'Spedizione on demand disponibile',
+                logoservizilink: '#',
+                logoservizi2: '/images/support.png',
+                logoservizitext2: 'Servizio clienti sempre attivo',
+                logoservizilink2: '#',
+                logoservizi3: '/images/resi.png',
+                logoservizitext3: 'Resi gratuiti entro 30 giorni',
+                logoservizilink3: '#'
+             }
+             %>
+
+             <%= render partial: 'components/diadora/footer'
+              %>
+</div>

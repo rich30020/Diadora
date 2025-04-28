@@ -1,0 +1,29 @@
+<div class="w-full max-w-xs bg-[#F7F6F9] shadow-md mb-20 ml-10">
+    <!-- Top icons -->
+    <div class="flex justify-between items-start px-2 pt-2">
+        <!-- Bandiera -->
+        <img src=<%= cardflag %> alt="Bandiera Italia" class="w-6 h-6 rounded-full">
+        <!-- Cuore -->
+        <div class="text-gray-400 hover:text-red-500 text-3xl">
+            <img src=<%= cardheart %> alt="Cuore" class="w-6 h-6">
+        </div>
+    </div>
+
+    <!-- Immagine prodotto -->
+    <div class="px-2 py-4">
+        <img src=<%= cardimage %> alt="Scarpa Atomo Star" class="w-full h-auto object-contain">
+    </div>
+
+    <!-- Descrizione -->
+    <div class="px-3 pb-4">
+        <h3 class="text-black font-bold text-base"><%= cardtitle %></h3>
+        <p class="text-black mt-1"><%= cardprice %></p>
+        <p class="text-gray-500 text-sm mt-1 truncate">S<%= carddescription %></p>
+
+        <!-- Bottom row -->
+        <div class="flex justify-between items-center mt-2 text-sm">
+            <span class="text-yellow-700 font-bold"><%= cardnovita %></span>
+            <span class="text-gray-600"><%= cardcolor %></span>
+        </div>
+    </div>
+</div>
